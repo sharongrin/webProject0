@@ -2,25 +2,99 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./info.html">About Rowling</a>
-            <a href="./books.html">Books</a>
-            <a href="./movies.html">Movies</a> 
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">
+                <img src="./hplogo.png" width="70" height="70" alt="">
+            </a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./info.html">About J.K. Rowling</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./books.html" tabindex="-1" aria-disabled="true">The Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movies.html" tabindex="-1" aria-disabled="true">The Movies</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>>
         <h1>
             The Books
         </h1>
+        <br>
         <ol>
             <li>Harry Potter and The Philosopher's Stone (1997) </li>
+            <p class="brief">
+                Harry potter, a boy who learns on his eleventh birthday that he is the orphaned son
+                of two powerful wizards and possesses unique magical powers of his own. 
+                He is summoned from his life as unwanted child to become a student at Hogwarts, an English boarding school
+                for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parants' mysterious deaths ...
+            </p>
             <li>Harry Potter and The Chamber of Secrets (1998)  </li>
+            <p class="brief">
+                Harry potter's summer has included the worst birthday ever, DOOMY warnings
+                from HOUSE-ELF called Dobby, and rescue from the Sursleys by his friend Ron Weasley
+                in a magical flying car! Back at Hogwarts School of Witchcarft and Wizardry for
+                his secind year, Harry hears strange whispers echo through empty corridors 
+                and then the attack start. Students are found as though turned to stone..
+                Dobby's sinister predictions seem to be coming TRUE.
+            </p>
             <li>Harry Potter and The Prisoner of Azkaban (1999) </li>
+            <p class="brief">
+                When the KNIGHT BUS crashes through the darkness and screeches to a halt in front 
+                of him, it's the start of another far from ondinary year at Hogwarts for Harry Potter.
+                Sirius Black, escaped mass-murderer and follower of LORD VOLDEMORT,
+                is on the run - and they say he is coming after Harry. In his first ever Divination
+                class, Professor Trelawney sees an omen of death in Harry's tea leaves... But perhaps
+                most terrifying of all are the DEMENTORS patrolling the school grounds, with their soul-sucking kiss...
+            </p>
             <li>Harry Potter and The Goblet of Fire (2000)      </li>
+            <p class="brief">
+                The TRIWIZARD TOURNAMENT is to be held at Hogwarts. Only wizards who are over seventeen
+                are allowed to enter - but that doesn't stop Harry dreaming that he will win the competition.
+                Then at Hallowe'en, ehrn the Goblet of Fire makes its selection, Harry is amazed to find 
+                his name is one of those that the magical cup picks out. He will face death-defying tasks,
+                Dragons and Dark wizards, but with the help of his best friends, Ron and Hermione, he might
+                just make it through - ALIVE!
+            </p>
             <li>Harry Potter and The Order of the Phoenix (2003)</li>
+            <p class="brief">
+                DARK TIMES have come to Hogwarts. After the Dementors' Attack on his cousin Dudley,
+                Harry Potter knows that VOLDEMORT will stop at nothing to find him. There are many who
+                deny the Dark Lord's return, but Harry is not alone: a SECRET ORDER gathers at Grimmauld Place
+                to fight against the Dark forces. Harry must allow Professor Snape to teach him how to protect
+                himself from Voldemort's savage assaults on his mind. But they are growing stronger by the day
+                and Harry is running out of time ... 
+            </p>
             <li>Harry Potter and The Half-Blood Prince (2006)   </li>
+            <p class="brief">
+                When Dumbledore arrives at Privet Drive one summer night to collect Harry Potter, his wand hand
+                is blackened and shrivelled, but he does not reveal why. Secrets and suspicion are spreading 
+                through the wizarding world, and Hogwarts itself is not safe. Harry is convinced that Malfoy bears
+                the DARK MARKL there is a Death Eater amongst. Harry will need powerful magic and true friends as
+                he explores VOLDEMORT'S darkest secrets, and Dumbledore prepares him to face his DESTINY ...
+            </p>
             <li>Harry Potter and The Deathly Hallows (2007)     </li>
+            <p class="brief">
+                As he climbs into the sidecar of Hagrid's motorbike and takes to the skies, leaving
+                Privet Drive for the last time, Harry Potter knows that LORD VOLDEMORT and the Death Eaters
+                are not far behind. The protective charm that has kept Harry dafe until now is broken, but he
+                cannot keep hiding. The Dark Lord is breathing fear into everything Harry loves, and to stop him
+                Harry will have to find and destroy the remaining HORCRUXES. The final battle must begin - Harry 
+                must stand and face his enemy ... 
+            </p>
         </ol>
     </body>
 </html>
