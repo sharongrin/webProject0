@@ -128,15 +128,33 @@ h1{
     z-index: 1;
 }
 
-#info_body #bg{
+#info_body .bg{
     position: absolute;
     z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(./hoglogo.jpg);
-    opacity: 0.5;
+    background-image: url(../img/hoglogo.jpg);
+    opacity: 0.15;
     background-size: contain;
+
+}
+
+#movie_body{
+    position: relative;
+    z-index: 1;
+}
+
+#movie_body .bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/hpMovie.jpg);
+    opacity: 0.5;
+    
 
 }
