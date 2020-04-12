@@ -1,29 +1,66 @@
 table{
-    border: 1px solid black;
     border-collapse: collapse;
+}
+
+tr:nth-of-type(odd){
+    background: lavender;
+}
+
+tr:nth-of-type(even){
+    background: white;
 }
 
 th{
     font-weight: bold;
-    border: 1px solid black;
     background-color: black;
     color: white;
 }
 
-td{
+td, th{
     border: 1px solid black;
     padding: 5px;
 }
 
-ol li{
-   font-size: 20px; 
-   font-weight: bolder;
-   padding: 2px;
-}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px){
+    
+    table, th, td, tr{
+        display: block;
+    }
+   
+    th{
+        position: absolute;
+        top: -9999px;
+        left:-9999px;
+    }
 
-.brief{
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    tr {border: 1px solid black}
+
+    td{
+        border: none;
+        border-bottom: 1px solid grey;
+        position: relative;
+        padding-left: 70%;
+    }
+
+    td::before{
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {content: "Film"}
+    td:nth-of-type(2):before {content: "Release date"}
+    td:nth-of-type(3):before {content: "Director"}
+    td:nth-of-type(4):before {content: "ScreenWriter"}
+    td:nth-of-type(5):before {content: "Producer(s)"}
+    td:nth-of-type(6):before {content: "Composer"}
+    td:nth-of-type(7):before {content: "Budget"}
+    td:nth-of-type(8):before {content: "Box office gross (worldwide)"}
 }
 
 #index_body{    
@@ -66,4 +103,39 @@ footer{
 
 #p_footer{
     text-align: center;
+}
+
+h1{
+    margin: 10px;
+    padding: 10px;
+}
+
+#cast{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#info_body{
+    position: relative;
+    z-index: 1;
+}
+
+#info_body #bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(./hoglogo.jpg);
+    opacity: 0.5;
+    background-size: contain;
+
 }

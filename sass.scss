@@ -1,0 +1,118 @@
+$var: 10px;
+
+%bg{
+    content: "";
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+ol:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+ol{
+    font-family: Arial, Helvetica, sans-serif;
+    // list-style: none;
+    padding: $var;
+    margin: $var;
+    max-width: 1200px;
+
+    .item{
+        float: left;
+        
+
+        li{
+            font-size: 20px; 
+            font-weight: bolder;
+            padding: $var;
+            margin: 30px;
+        }
+    
+        p{
+            // @extend %inh;
+            margin: 80px;
+            padding: 20px;
+    
+        }
+
+    }
+    
+}
+
+.brief{
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    font-weight: bolder;
+    padding: $var;
+    font-size: 18px;
+    margin: 30px;
+    
+
+    #bg1{
+        @extend %bg;
+        background-image: url(./hp1.jpg);
+
+    }
+
+    #bg2{
+        @extend %bg;
+        background-image: url(./hp2.jpg);
+
+    }
+
+    #bg3{
+        @extend %bg;
+        background-image: url(./hp3.jpg);
+
+    }
+
+    #bg4{
+        @extend %bg;
+        background-image: url(./hp4.jpeg);
+
+    }
+
+    #bg5{
+        @extend %bg;
+        background-image: url(./hp5.jpg);
+
+    }
+
+    #bg6{
+        @extend %bg;
+        background-image: url(./hp6.jpg);
+
+    }
+
+    #bg7{
+        @extend %bg;
+        background-image: url(./hp7.jpg);
+
+    }
+}
+
+h1{
+    margin: $var;
+    padding: $var;
+}
+
+p{
+    margin: $var;
+    font-size: 20px;
+}
+

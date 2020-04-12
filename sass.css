@@ -1,0 +1,95 @@
+.brief #bg1, .brief #bg2, .brief #bg3, .brief #bg4, .brief #bg5, .brief #bg6, .brief #bg7 {
+  content: "";
+  background-size: cover;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+ol:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+ol {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 10px;
+  max-width: 1200px;
+}
+
+ol .item {
+  float: left;
+}
+
+ol .item li {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  margin: 30px;
+}
+
+ol .item p {
+  margin: 80px;
+  padding: 20px;
+}
+
+.brief {
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 18px;
+  margin: 30px;
+}
+
+.brief #bg1 {
+  background-image: url(./hp1.jpg);
+}
+
+.brief #bg2 {
+  background-image: url(./hp2.jpg);
+}
+
+.brief #bg3 {
+  background-image: url(./hp3.jpg);
+}
+
+.brief #bg4 {
+  background-image: url(./hp4.jpeg);
+}
+
+.brief #bg5 {
+  background-image: url(./hp5.jpg);
+}
+
+.brief #bg6 {
+  background-image: url(./hp6.jpg);
+}
+
+.brief #bg7 {
+  background-image: url(./hp7.jpg);
+}
+
+h1 {
+  margin: 10px;
+  padding: 10px;
+}
+
+p {
+  margin: 10px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=sass.css.map */
