@@ -1,5 +1,6 @@
 table{
     border-collapse: collapse;
+    width: 100%;
 }
 
 tr:nth-of-type(odd){
@@ -64,7 +65,7 @@ only screen and (max-width: 760px),
 }
 
 #index_body{    
-    background-image: url('./hogwarts.jpg');
+    background-image: url('../img/hogwarts.jpg');
     background-size: cover;
     overflow-x: hidden;
 }
