@@ -79,19 +79,22 @@ only screen and (max-width: 760px),
     background: rgba(176, 196, 222, 0.7);
     text-align: center;
     line-height: 1.7;
-    height: 300px;
+    /* height: 300px; */
 
 }
 
 iframe{
-    margin: 30px;
-    height: 300px;
+    margin: 15px;
+    height: 75%;
+    width: 95%;
 }
 
-.card{
+.bgCard{
     background: rgba(176, 196, 222, 0.7);
     border: 30px;
     margin: 50px;
+    padding: 10px;
+    display: inline-block;
 }
 
 footer{
@@ -104,6 +107,7 @@ footer{
 
 #p_footer{
     text-align: center;
+    color: white;
 }
 
 h1{
@@ -136,7 +140,7 @@ h1{
     left: 0;
     right: 0;
     background-image: url(../img/hoglogo.jpg);
-    opacity: 0.15;
+    opacity: 0.25;
     background-size: contain;
 
 }

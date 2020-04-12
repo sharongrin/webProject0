@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Harry Potter's World</title>
         <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body id="index_body">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand">
+            <a class="navbar-brand" href="#">
                 <img src="./img/hplogo.png" width="50" height="50" alt="">
             </a>
-            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="my-nav" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
+            <div id="my-nav" class="navbar-collapse collapse">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
@@ -36,7 +39,7 @@
             Welcome to the Wizarding World of Harry Potter!
         </h1>
         <div class="row">
-            <div class="card col-lg-5 col-sm">
+            <div class="col-lg-5 col-sm bgCard">
                 <p id="main_p">
                     This site is for all Harry Potter's fans! 
                     <br>
@@ -45,13 +48,13 @@
                     info about the movies, and of course, info about the great author - J.K. Rowling 
                 </p>
             </div>
-            <div class="card col-lg-5 col-sm">
+            <div class="col-lg-5 col-sm bgCard">
                 <iframe src="https://www.youtube.com/embed/IR6SYgyEwSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p style="text-align: center; font-weight: bold;">Funny review video</p>
             </div>
         </div>
     </body>
-    <footer class="py-2 bg-dark text-white-50">
+    <footer class="py-1 bg-dark text-white-50">
         <p id="p_footer">Copyright &copy; Sharon grinberg</p>
     </footer>
 </html>
